@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7c600">
+  <meta name="description" content="Un pequeño detalle hecho con flores amarillas.">
+  <title>Para ti 💛</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="sky"></div>
+  <div id="petals" aria-hidden="true"></div>
+
+  <main class="app">
+    <section class="hero" id="inicio">
+      <div class="sun-glow"></div>
+
+      <div class="flower-bouquet" aria-hidden="true">
+        <div class="stem s1"></div>
+        <div class="stem s2"></div>
+        <div class="stem s3"></div>
+        <div class="stem s4"></div>
+
+        <div class="flower f1"><span></span></div>
+        <div class="flower f2"><span></span></div>
+        <div class="flower f3"><span></span></div>
+        <div class="flower f4"><span></span></div>
+      </div>
+
+      <p class="eyebrow">Un detalle especial</p>
+      <h1>Flores amarillas<br><span>para ti 💛</span></h1>
+      <p class="intro">Hay detalles que no necesitan una fecha especial.</p>
+
+      <button class="primary-btn" id="openMessage">
+        <span>🌻</span> Abrir mi mensaje
+      </button>
+
+      <button class="music-btn" id="musicBtn" aria-label="Activar música">
+        ♫
+      </button>
+    </section>
+
+    <section class="message hidden" id="message">
+      <div class="card">
+        <div class="mini-flower">🌻</div>
+        <p class="eyebrow">Para una persona especial</p>
+        <h2>Hoy quiero regalarte<br><span>un poquito de alegría.</span></h2>
+
+        <p>
+          Estas flores amarillas representan cariño, luz y buenos deseos.
+          Espero que cuando las veas recuerdes que siempre hay motivos para sonreír.
+        </p>
+
+        <p class="highlight">
+          Que nunca te falten razones para florecer. 🌻
+        </p>
+
+        <button class="secondary-btn" id="flowersBtn">✨ Llenar la pantalla de flores</button>
+      </div>
+    </section>
+
+    <section class="final hidden" id="final">
+      <div class="final-content">
+        <div class="big-flower">🌻</div>
+        <h2>Un detalle para ti 💛</h2>
+        <p>Porque algunas personas merecen recibir flores aunque no sea un día especial.</p>
+        <button class="secondary-btn" id="backBtn">Volver a ver el mensaje</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Hecho con 💛</footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
