@@ -11,18 +11,8 @@
 <body>
 
 
-<audio id="musicaFondo" loop>
-    <source src="musica/fondo.mp3" type="audio/mpeg">
-  
-</audio>
 
-<button id="botonMusica" onclick="reproducirMusica()">
-    🎵 Reproducir música
-</button>
 
-<audio id="musicaFondo" loop>
-    <source src="musica/fondo.mp3" type="audio/mpeg">
-</audio>
   
   <div class="sky"></div>
   <div id="petals" aria-hidden="true"></div>
@@ -51,9 +41,18 @@
         <span>🌻</span> Abrir mi mensaje
       </button>
 
-      <button class="music-btn" id="musicBtn" aria-label="Activar música">
+      <button class="music-btn" id="musicBtn" aria-label="Activar música" onclick="reproducirMusica()" >
         ♫
       </button>
+
+
+
+<audio id="musicaFondo" loop>
+    <source src="musica/fondo.mp3" type="audio/mpeg">
+</audio>
+
+
+      
     </section>
 
     <section class="message hidden" id="message">
