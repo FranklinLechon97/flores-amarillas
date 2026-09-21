@@ -9,6 +9,21 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+
+
+<audio id="musicaFondo" loop>
+    <source src="musica/fondo.mp3" type="audio/mpeg">
+  
+</audio>
+
+<button id="botonMusica" onclick="reproducirMusica()">
+    🎵 Reproducir música
+</button>
+
+<audio id="musicaFondo" loop>
+    <source src="musica/fondo.mp3" type="audio/mpeg">
+</audio>
+  
   <div class="sky"></div>
   <div id="petals" aria-hidden="true"></div>
 
@@ -73,5 +88,22 @@
   <footer>Hecho por Franklin Lechón 🤓 con todo el cariño 💛</footer>
 
   <script src="js/app.js"></script>
+
+<script>
+function reproducirMusica() {
+    const musica = document.getElementById("musicaFondo");
+    const boton = document.getElementById("botonMusica");
+
+    if (musica.paused) {
+        musica.play();
+        boton.innerHTML = "⏸️ Pausar música";
+    } else {
+        musica.pause();
+        boton.innerHTML = "🎵 Reproducir música";
+    }
+}
+</script>
+
+  
 </body>
 </html>
